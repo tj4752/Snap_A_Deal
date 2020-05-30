@@ -1,0 +1,57 @@
+package io.realm;
+
+
+public interface StoreRealmProxyInterface {
+    public int realmGet$id();
+    public void realmSet$id(int value);
+    public String realmGet$name();
+    public void realmSet$name(String value);
+    public String realmGet$address();
+    public void realmSet$address(String value);
+    public com.domain.apps.snapadeal.classes.Images realmGet$images();
+    public void realmSet$images(com.domain.apps.snapadeal.classes.Images value);
+    public Double realmGet$latitude();
+    public void realmSet$latitude(Double value);
+    public Double realmGet$longitude();
+    public void realmSet$longitude(Double value);
+    public Double realmGet$distance();
+    public void realmSet$distance(Double value);
+    public String realmGet$description();
+    public void realmSet$description(String value);
+    public int realmGet$type();
+    public void realmSet$type(int value);
+    public int realmGet$status();
+    public void realmSet$status(int value);
+    public String realmGet$detail();
+    public void realmSet$detail(String value);
+    public com.domain.apps.snapadeal.classes.User realmGet$user();
+    public void realmSet$user(com.domain.apps.snapadeal.classes.User value);
+    public int realmGet$user_id();
+    public void realmSet$user_id(int value);
+    public String realmGet$imageJson();
+    public void realmSet$imageJson(String value);
+    public boolean realmGet$Voted();
+    public void realmSet$Voted(boolean value);
+    public double realmGet$votes();
+    public void realmSet$votes(double value);
+    public String realmGet$nbr_votes();
+    public void realmSet$nbr_votes(String value);
+    public RealmList<com.domain.apps.snapadeal.classes.Images> realmGet$listImages();
+    public void realmSet$listImages(RealmList<com.domain.apps.snapadeal.classes.Images> value);
+    public String realmGet$phone();
+    public void realmSet$phone(String value);
+    public boolean realmGet$saved();
+    public void realmSet$saved(boolean value);
+    public int realmGet$nbrOffers();
+    public void realmSet$nbrOffers(int value);
+    public String realmGet$lastOffer();
+    public void realmSet$lastOffer(String value);
+    public int realmGet$category_id();
+    public void realmSet$category_id(int value);
+    public int realmGet$featured();
+    public void realmSet$featured(int value);
+    public int realmGet$gallery();
+    public void realmSet$gallery(int value);
+    public String realmGet$link();
+    public void realmSet$link(String value);
+}

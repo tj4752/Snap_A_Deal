@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "G:\\Freelancer\\ns-1.8-android-full-application\\ns-1.8-android\\ns-1.8-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tanuj\\.gradle\\caches\\transforms-2\\files-2.1\\d345353c8e6b4b7dbed17de3654a5104\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,532,636",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,631,747"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,11,12",
+                        "startColumns": "4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,114,185,256,326,396,464,647,751",
+                        "endColumns": "58,70,70,69,69,67,67,103,115",
+                        "endOffsets": "109,180,251,321,391,459,527,746,862"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\tanuj\\.gradle\\caches\\transforms-2\\files-2.1\\08cae222c4825ef629703d8446d41c67\\res\\values-large-v4\\values-large-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,177",
+                        "endColumns": "121,133",
+                        "endOffsets": "172,306"
+                    },
+                    "to": {
+                        "startLines": "13,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "867,989",
+                        "endColumns": "121,133",
+                        "endOffsets": "984,1118"
+                    }
+                },
+                {
+                    "source": "G:\\Freelancer\\ns-1.8-android-full-application\\ns-1.8-android\\ns-1.8-android\\app\\src\\main\\res\\values-large\\dimens.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "57,113",
+                        "endColumns": "55,58",
+                        "endOffsets": "108,167"
+                    },
+                    "to": {
+                        "startLines": "9,10",
+                        "startColumns": "4,4",
+                        "startOffsets": "532,588",
+                        "endColumns": "55,58",
+                        "endOffsets": "583,642"
+                    }
+                }
+            ]
+        }
+    ]
+}

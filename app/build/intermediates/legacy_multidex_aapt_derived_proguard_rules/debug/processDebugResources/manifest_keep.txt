@@ -1,0 +1,4 @@
+# Referenced at G:\Freelancer\ns-1.8-android-full-application\ns-1.8-android\ns-1.8-android\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:46
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at G:\Freelancer\ns-1.8-android-full-application\ns-1.8-android\ns-1.8-android\app\build\intermediates\merged_manifests\debug\AndroidManifest.xml:46
+-keep class com.domain.apps.snapadeal.AppController { <init>(); }

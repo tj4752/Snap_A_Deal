@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dp_view_store_on">View the store on NearbyStores</string>
+    <string name="dp_view_offer_on">View the offer on NearbyStores</string>
+    <string name="dp_view_event_on">View the event on NearbyStores</string>
+
+</resources>

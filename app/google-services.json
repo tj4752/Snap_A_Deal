@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "635692777729",
+    "firebase_url": "https://snapadeal-ff83a.firebaseio.com",
+    "project_id": "snapadeal-ff83a",
+    "storage_bucket": "snapadeal-ff83a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:635692777729:android:5ba2747d6087ece0311b00",
+        "android_client_info": {
+          "package_name": "co.snapadeal.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "635692777729-o1je4t8rgnbs8i25ugmomaj04mmmhr4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrs9Oy81WtgkB-RFnmVhDXO9mS5NkqzIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "635692777729-o1je4t8rgnbs8i25ugmomaj04mmmhr4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

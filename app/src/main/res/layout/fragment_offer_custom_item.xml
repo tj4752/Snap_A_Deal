@@ -1,0 +1,179 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp"
+    android:clickable="true"
+    android:foreground="@drawable/custom_bg"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="false"
+    android:focusable="true">
+
+
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:background="@color/defaultWhiteColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/def_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="start|top"
+                    android:id="@+id/featured"
+                    android:background="@color/colorFeatured"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/defaultWhiteColor"
+                    android:gravity="center"
+                    android:text="@string/featured"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_gravity="end|top"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_gravity="end|top"
+                    android:id="@+id/distance"
+                    android:background="@color/colorAccent"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/defaultWhiteColor"
+                    android:gravity="center"
+                    android:text="@string/offerIn"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_gravity="end|top"
+                    android:id="@+id/offer"
+                    android:background="@color/colorPromo"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/defaultWhiteColor"
+                    android:gravity="center"
+                    android:text="-50%"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:background="@drawable/gradient_bg_bottom_to_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+                    <LinearLayout
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_weight="1"
+                            android:layout_gravity="start"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:textStyle="bold"
+                                android:textColor="@color/defaultWhiteColor"
+                                android:textSize="15sp"
+                                android:id="@+id/name"
+                                android:ellipsize="marquee"
+                                android:text="Lorem ipsum dolor "
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:singleLine="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textAlignment="viewStart"
+                            android:ellipsize="marquee"
+                            android:textColor="@color/defaultWhiteColor"
+                            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true" />
+
+
+                    </LinearLayout>
+
+
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+

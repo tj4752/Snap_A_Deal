@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "G:\\Freelancer\\ns-1.8-android-full-application\\ns-1.8-android\\ns-1.8-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tanuj\\.gradle\\caches\\transforms-2\\files-2.1\\08cae222c4825ef629703d8446d41c67\\res\\values-small-v4\\values-small-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,128,198,270",
+                        "endColumns": "72,69,71,69",
+                        "endOffsets": "123,193,265,335"
+                    }
+                },
+                {
+                    "source": "G:\\Freelancer\\ns-1.8-android-full-application\\ns-1.8-android\\ns-1.8-android\\app\\src\\main\\res\\values-small\\dimens.xml",
+                    "from": {
+                        "startLines": "4,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "57,113",
+                        "endColumns": "55,58",
+                        "endOffsets": "108,167"
+                    },
+                    "to": {
+                        "startLines": "6,7",
+                        "startColumns": "4,4",
+                        "startOffsets": "340,396",
+                        "endColumns": "55,58",
+                        "endOffsets": "391,450"
+                    }
+                }
+            ]
+        }
+    ]
+}

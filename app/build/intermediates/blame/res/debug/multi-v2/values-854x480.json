@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "G:\\Freelancer\\ns-1.8-android-full-application\\ns-1.8-android\\ns-1.8-android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-854x480\\values-854x480.xml",
+            "map": [
+                {
+                    "source": "G:\\Freelancer\\ns-1.8-android-full-application\\ns-1.8-android\\ns-1.8-android\\app\\src\\main\\res\\values-480x854\\dimens.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "47",
+                        "endOffsets": "100"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                }
+            ]
+        }
+    ]
+}

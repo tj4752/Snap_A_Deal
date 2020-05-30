@@ -1,0 +1,257 @@
+<resources>
+    <!-- update this 3 keys and compile your code from here  -->
+    <!-- Set your  application ID-->
+
+    <!--General -->
+    <string name="Home">Inicio</string>
+    <string name="ManageThings">Publicar</string>
+    <string name="forgotpassword">&lt;u>Recuperar Contraseña&lt;/u></string>
+    <string name="drawer_open">Abierto</string>
+    <string name="drawer_close">Cerrado</string>
+    <string name="confirm">confirmar</string>
+    <string name="search">Buscar</string>
+    <string name="options_exit">Salida</string>
+    <string name="oups_no_item_found">No encontramos nada</string>
+    <string name="about">Nosotros </string>
+    <string name="Favoris">Favoritos</string>
+    <string name="FindCustomers">Personas cerca</string>
+    <string name="About_us">Sobre Nosotros</string>
+    <string name="Settings">Configuración</string>
+    <string name="MapStores">Mapa</string>
+    <string name="Login">Iniciar Sesión</string>
+    <string name="Logout">Cerrar Sesión</string>
+    <string name="parameter">Parámetros</string>
+    <string name="title_activity_map_marker_position">Mapa</string>
+    <string name="close">Cerrar</string>
+    <string name="EventLike">Mis Eventos</string>
+    <string name="categories">Categorías</string>
+
+
+    <string name="my_stores">"Mis Comercios</string>
+    <string name="my_events">"Mis Eventos</string>
+
+    <!--category--><![CDATA[
+    >
+    ]]>
+    <string name="Categories">Categorías</string>
+
+    <!--event-->
+    <string name="event_detail">Detalles del Evento</string>
+    <string name="event_button_participate">Recordar</string>
+    <string name="event_button_unparticipate">No Recordar</string>
+    <string name="event_participation_popup">Recordatorio Agregado!</string>
+    <string name="event_participation_canceled">Participación Cancelada!</string>
+
+
+    <!--notification & messages-->
+    <string name="check_network">revisa tu conexión</string>
+    <string name="network_error">Sin conexión! Haz click para reintentar.</string>
+    <string name="check_nework">Revisa tu conexión</string>
+    <string name="enable_network">Activa la conexión de internet en tu dispositivo</string>
+    <string name="get_photos">Elegir foto de la galería </string>
+
+    <string name="editProfile">Editar Perfil</string>
+
+    <!--store-->
+    <string name="store_create_btn">Crear Comercio</string>
+    <string name="store_to_far_map">Demasiado lejos para mostrar la ruta</string>
+    <string name="store_call_error">Error en la llamada</string>
+    <string name="store_title_detail">Detalles del Comercio</string>
+
+    <!--messages settings-->
+
+    <string name="settings_notifications">NOTIFICACIONES</string>
+    <string name="settings_app_infos">APLICACIÓN</string>
+
+
+    <!-- OFFERS -->
+    <string name="settings_notification_offers">Recibe notificaciones de ofertas</string>
+    <string name="settings_notification_offers_title">Notificación de Ofertas</string>
+
+
+    <!-- EVENTS -->
+    <string name="settings_notification_events">Recibe notificación de eventos cercanos</string>
+    <string name="settings_notification_events_title">Notificación de Eventos</string>
+
+    <!-- STORES -->
+    <string name="settings_notification_stores">Recibe notificación cuando haya un Comercio cercano</string>
+    <string name="settings_notification_stores_title">Notificación de Comercios</string>
+
+
+    <!-- MESSENGER -->
+    <string name="settings_notification_messenger">Recibe notificaciones cuando recibas un mensaje</string>
+    <string name="settings_notification_messenger_title">Notificaciones de mensajes</string>
+
+    <!-- DISTANCE -->
+    <string name="settings_notification_distance_dis">%1$s km</string>
+
+    <!-- APP_INFOS -->
+    <string name="settings_app_infos_title">Versión de la aplicación</string>
+
+    <!--login & sign up-->
+    <string name="insert_name_field">Nombre </string>
+
+    <string name="lessThan1km">menos de 1 km</string>
+    <string name="MoreThan2km">+2 km</string>
+    <string name="MoreThan5km">+5 km</string>
+    <string name="MoreThan10km">+10 km</string>
+
+    <string name="description">Descripción</string>
+
+    <string name="permission_disabled_notice">NEARBYSTORES funciona con permisos de geolocalización. Si cancelas estos permisos la aplicacion puede no funcionar correctamente.</string>
+    <string name="signup_username">Usuario</string>
+    <string name="signup_number">Celular</string>
+    <string name="signup_select_your_country">País</string>
+    <string name="login_username">Email o usuario</string>
+    <string name="password_atleast_6_8_characters_long">Contraseña</string>
+    <string name="save">Guardar</string>
+    <string name="find_new_neighbours">Busca gente cerca</string>
+
+    <string name="FromTo"><![CDATA[From <u>%1$s</u> a <u>%2$s</u>]]></string>
+    <string name="youHaveDiscussions">Tienes %1$d respuesta %2$d mensaje</string>
+    <string name="youHaveMessage">Tienes nuevos mensajes</string>
+    <string name="offerIn">Oferta a %1$s</string>
+    <string name="offers">Ofertas</string>
+    <string name="reviews">Opiniones (%1$s)</string>
+    <string name="noOffers">No hay Ofertas</string>
+    <string name="detailOffer">Detalle de la Oferta</string>
+    <string name="noReviews">Sin Opiniones</string>
+    <string name="nbrOffers">%1$d oferta</string>
+    <string name="addReview">Agregar Opinión</string>
+    <string name="settings">Configuración</string>
+    <string name="pseudo">Alias</string>
+    <string name="error">Error!</string>
+
+    <string name="selectRating">Selecciona de 1 a 5 estrellas</string>
+    <string name="pleaseWriteReview">Escribe tu opinión</string>
+    <string name="writeReview">Escribir opinión</string>
+    <string name="thankYou">Gracias!</string>
+
+    <string name="searchOn">Buscar</string>
+
+    <string name="searchOnStores">Buscar en Comercios</string>
+    <string name="searchOnOffers">Buscar en Ofertas</string>
+    <string name="searchOnEvents">Buscar en Eventos</string>
+    <string name="pconfirm">Confirmación de contraseña</string>
+    <string name="email">Email</string>
+
+
+    <string name="people_around_me">Gente cerca de mi</string>
+    <string name="noDiscussion">Sin Mensajes!</string>
+    <string name="promo">PROMO</string>
+
+
+    <string name="fileUploading">Subiendo ...</string>
+    <string name="fill_all_fields">Completar todos los campos</string>
+
+    <string name="rateUs">Califica la app</string>
+    <string name="rateIt">Califícalo</string>
+
+    <string name="you_ve_already_reviewd">Ya has agregado tu opinión!</string>
+
+    <string name="shared_text">%1$s - Solo en %2$s \n %3$s</string>
+    <string name="reload">Recargar</string>
+    <string name="mail">Mail</string>
+    <string name="today">Hoy</string>
+    <string name="Send_message">Enviar Mensaje</string>
+    <string name="create_an_account">Crear Cuenta</string>
+    <string name="or">O</string>
+    <string name="Sign_in">Ingresa</string>
+    <string name="password_hint">Contraseña</string>
+    <string name="version">Version:</string>
+    <string name="phone">Teléfono</string>
+    <string name="featured">Destacado</string>
+    <string name="app_privacy">Privacidad</string>
+    <string name="app_term_of_uses">Términos de Uso</string>
+
+
+
+    <string name="offer_start_at">Empieza el %1$s</string>
+    <string name="offer_end_at">Termina el %1$s</string>
+    <string name="offer_ended_at">Finalizada el %1$s</string>
+
+
+    <string name="nbr_stores_message">%1$s comercios</string>
+
+
+    <string name="tab_stores">Comercios</string>
+    <string name="tab_offers">Ofertas</string>
+    <string name="tab_events">Eventos</string>
+    <string name="tab_inbox">Mensajes</string>
+    <string name="NO_RESULT">No encontramos nada</string>
+    <string name="your_destination">Tu Destino</string>
+    <string name="refresh">Refrescar</string>
+    <string name="no_users">Sin Usuarios</string>
+    <string name="settings_notification_upcomingevent">Reciba una notificación cuando haya un nuevo evento próximo</string>
+    <string name="settings_notification_upcomingevent_title" >Evento Próximo</string>
+    <string name="sign_up">Registrarme</string>
+
+
+    <string name="upComingEventMessage" >Próximos Eventos</string>
+    <string name="upComingEventsMessage" >Próximos Eventos</string>
+    <string name="upcomingTag">Próximamente</string>
+    <string name="myUpComingEvents">Próximos Eventos</string>
+    <string name="chat_notification_title">NEARBYSTORES - Tienes un mensaje</string>
+    <string name="authentification_error_msg">Credenciales incorrectas.</string>
+    <string name="oneOffer">%1$d oferta</string>
+    <string name="gallery">Galería</string>
+    <string name="noImages">Sin Fotos</string>
+    <string name="enable_network_map_direction">Activa Internet y Localización</string>
+    <string name="enable_gps_map_direction">Activa tu localización primero</string>
+    <string name="eventIn">Evento en</string>
+
+
+    <string name="skip">Saltar</string>
+    <string name="start">Empieza</string>
+    <string name="intro_slide_1_title">Encuentra restaurantes rápidamente</string>
+    <string name="intro_slide_1_description">Prueba diferentes restaurantes nuestro mapa te guiará a las mejores ofertas </string>
+    <string name="intro_slide_2_title">Próximos Eventos</string>
+    <string name="intro_slide_2_description">Podrás conocer y asistir a eventos cercanos a ti! </string>
+    <string name="intro_slide_3_title">Comercios Cercanos</string>
+    <string name="intro_slide_3_description"> Ofertas, promociones y descuentos estarán siempre contigo.</string>
+    <string name="intro_slide_4_title">Califica tus comercios favoritos</string>
+    <string name="intro_slide_4_description"> Conoce y califica los comercios que más te agradan.</string>
+    <string name="store_not_exist">Ese comercio no existe</string>
+    <string name="alert_gps_dialog">Necesitas permitir el GPS  o ubicación para poder usar los mapas. Inténtalo de nuevo </string>
+    <string name="confirm_gps_relaunch">Inténtalo de Nuevo</string>
+    <string name="next">Siguiente</string>
+    <string name="block">Bloquear</string>
+    <string name="unblock">Desbloquear</string>
+    <string name="less_than_1_km">Menos de 1 km</string>
+    <string name="noDiscussions">Sin Comentarios</string>
+    <string name="stores_near_by">Comercios Cerca</string>
+    <string name="searching_for_stores_bearby">Buscando Comercios Cercanos</string>
+    <string name="network_not_available">No pudimos conectar con el servidorr</string>
+    <string name="retry">Reintentar</string>
+
+
+    <string name="MapStoresMenu">Ordenar por Cercanía</string>
+    <string name="review_title">Opiniones</string>
+    <string name="load_more">Cargar Más</string>
+    <string name="saved_messag">Guardado</string>
+    <string name="unsaved_message">Sin Guardar</string>
+    <string name="logout_alert">Ha salido de su cuenta. Eso es porque su cuenta ha sido bloqueada por un administrador. Para más detalles contáctenos.</string>
+    <string name="store_not_found">No encontrado!</string>
+    <string name="notification">Notificaciones</string>
+    <string name="language">Idioma</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="arabic">Arabic</string>
+    <string name="spanish">Español</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="geo">Geo</string>
+    <string name="date">Fecha</string>
+    <string name="msg_dialog_privacy_policy"> Si usas NEARBYSTORES, estás de acuerdo  con %1$s y %2$s .</string>
+    <string name="privacy_and_policy"><![CDATA[Privacy & Policy]]></string>
+    <string name="decline">No Aceptar</string>
+    <string name="accept">Aceptar</string>
+    <string name="official_website">Sitio Oficial</string>
+    <string name="offer_for">Oferta de %1$s</string>
+    <string name="offer_off">%1$s Descuento</string>
+    <string name="load_business">Cargar Comercios</string>
+
+
+
+</resources>
+
+

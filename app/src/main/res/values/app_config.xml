@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Android Api Key  -->
+    <string name="ANDROID_API_KEY">8253c76aa79eadf35ae5bf76ae1949ec</string>
+
+    <!-- BASE API URL (PLEASE SET BASE_URL YOU FIND IT IN YOUR DASHBOARD -> APPLICATION -> [APP CLIENT AUTH]) -->
+    <string name="BASE_URL">http://snapadeal.co/index.php</string>
+    <string name="BASE_URL_API">http://snapadeal.co/index.php/api</string>
+
+
+    <string name="TERMS_OF_USE_URL">http://snapadeal.co/term_of_uses.html</string>
+    <string name="PRIVACY_POLICY_URL">http://snapadeal.co/privacy_policy.html</string>
+
+
+    <!-- APP ADMOB -->
+    <string name="SHOW_ADS">false</string>
+    <string name="SHOW_ADS_IN_HOME">true</string>
+    <string name="SHOW_INTERSTITIAL_ADS_IN_STARTUP">true</string>
+    <string name="SHOW_ADS_IN_STORE">true</string>
+    <string name="SHOW_ADS_IN_EVENT">true</string>
+    <string name="SHOW_ADS_IN_OFFER">true</string>
+    <!--Your Admob APP UNIQUE ID-->
+    <string name="ad_app_id">ca-app-pub-2941492245508090~5878326373</string>
+    <!--Your Admob INTERSTITIAL ID-->
+    <string name="ad_interstitial_id">ca-app-pub-***********/**********</string>
+    <!-- Your Admob banner unit ID-->
+    <string name="banner_ad_unit_id">ca-app-pub-***********/**********</string>
+
+    <!--Set your google map key-->
+    <string name="map_api_key">AIzaSyADrWqn5i08qk44_uWAbLcFDAXJ8TmSLbE</string>
+
+    <!--Set this field will allow you to open the google direction maps on your app without redirecting to google maps app-->
+    <string name="ENABLE_LOCAL_MAPS_DIRECTION">true</string>
+    <!--Set your google map  direction key-->
+    <!--Note : this field is optional if you set the ENABLE_LOCAL_MAPS_DIRECTION to false -->
+    <string name="map_direction_api_key">AIzaSyADrWqn5i08qk44_uWAbLcFDAXJ8TmSLbE</string>
+    <!-- Google Analytics lets you measure your advertising ROI as well as track your Flash-->
+    <string name="analytics">UA-112054244-1</string>
+    <!--Set Your Application name-->
+    <string name="app_name">Nearby Stores</string>
+
+    <!--Set Your Application version -->
+    <string name="app_version">1.8.0</string>
+
+    <!-- ABOUT -->
+    <string name="ADDRESS_CONTACT">contact@domain.com </string>
+    <string name="PHONE">+01 0000 000000</string>
+    <string name="ABOUT_CONTENT">NEARBYSTORES is an innovative local business search app with an intelligent search functionality
+    that can help you find different businesses in an area easily. </string>
+
+
+    <!-- APP DESIGN -->
+    <!-- Set your theme color  -->
+    <item name="colorPrimary" type="color">#E53935</item>
+    <item name="colorAccent" type="color">#F44336</item>
+    <item name="colorPrimaryDark" type="color">#C62828</item>
+    <item name="colorPromo" type="color">#E53935</item>
+    <item name="colorFeatured" type="color">#1565C0</item>
+    <item name="colorUpcomingEvent" type="color">#E65100</item>
+
+    <item name="tab_colorDarkIcon" type="color">#B71C1C</item>
+    <item name="tab_colorActiveIcon" type="color">#FFFFFF</item>
+
+
+    <!-- ENABLE CHAT SERVICE -->
+    <string name="ENABLE_CHAT">true</string>
+
+    <!-- DISPLAY MANAGE STORES VIA WEB -->
+    <string name="ENABLE_WEB_DASHBOARD">true</string>
+
+    <!-- ENABLE INTRO SLIDER WHEN THE APP START FOR THE FIRST TIME -->
+    <string name="ENABLE_INTRO_SLIDER">false</string>
+
+    <!-- DISPLAY RATE US ALERT DIALOG WHEN USE WANT EXIT FROM APP -->
+    <string name="RATE_US_ON_PLAY_STORE_FORCE">true</string>
+
+    <!-- MAXIMUM NUMBER OF STORES DISPLAYED IN THE GEO STORES MAP -->
+    <string name="NBR_STORES_MAX_GEO_MAPS">100</string>
+
+    <!--This field allow you to set a maximum radius to display a route between user location and the store near by-->
+    <string name="distance_max_display_route">500000</string>
+
+
+    <!-- Change titles from strings file -->
+    <string-array name="tab_names">
+        <item>@string/tab_stores</item>
+        <item>@string/tab_offers</item>
+        <item>@string/tab_events</item>
+        <item>@string/tab_inbox</item>
+    </string-array>
+
+    <!-- downloaded icons from http://materialdesignicons.com/ and put them inside drawable folder -->
+    <integer-array name="tab_icons">
+        <item>@drawable/ic_storefront_outline_white_24dp</item>
+        <item>@drawable/ic_percent_outline_white_24dp</item>
+        <item>@drawable/ic_calendar_outline_white_24dp</item>
+        <item>@drawable/ic_inbox_outline_white_24dp</item>
+    </integer-array>
+
+    <!-- Tabs ID -->
+    <integer-array name="tab_indexes">
+        <item>0</item><!-- Stores Tab-->
+        <item>-6</item><!-- Offers Tab-->
+        <item>-4</item><!-- Events Tab-->
+        <item>-5</item><!-- Inbox Tab-->
+    </integer-array>
+
+
+    <!-- HOST NAME FOR DEEP LINKING -->
+    <string name="DP_HOST_NAME">domain.com</string>
+    <string name="DP_STORE_MESSAGE">@string/dp_view_store_on</string>
+    <string name="DP_OFFER_MESSAGE">@string/dp_view_offer_on</string>
+    <string name="DP_EVENT_MESSAGE">@string/dp_view_event_on</string>
+
+
+    <string name="DP_PATH_PREFIX_STORE">/store</string>
+    <string name="DP_PATH_PREFIX_OFFER">/offer</string>
+    <string name="DP_PATH_PREFIX_EVENT">/event</string>
+
+    <string name="DP_PATH_PREFIX_STORE_INDEX">/index.php/store</string>
+    <string name="DP_PATH_PREFIX_OFFER_INDEX">/index.php/offer</string>
+    <string name="DP_PATH_PREFIX_EVENT_INDEX">/index.php/event</string>
+
+
+</resources>

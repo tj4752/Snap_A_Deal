@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="co.snapadeal.app"
+    android:versionCode="80"
+    android:versionName="1.8.0" >
+
+    <uses-sdk
+        android:minSdkVersion="17"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- BroadcastReceiver permission to listen to the network -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- Required OpenGL ES 2.0. for Maps V2 -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true" />
+
+    <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.domain.apps.snapadeal.AppController"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_api_key0" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/ad_app_id" />
+
+        <service android:name="com.domain.apps.snapadeal.push_notification_firebase.FirebaseMessagingService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.domain.apps.snapadeal.push_notification_firebase.FirebaseInstanceIDService" >
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent" />
+
+        <receiver android:name="com.domain.apps.snapadeal.dtmessenger.DCMBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.IntroSliderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.MessengerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.ReviewsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.OffersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.ListUsersActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.OfferDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/_DP_OFFER_MESSAGE" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_OFFER"
+                    android:scheme="nsapp" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_OFFER"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_OFFER"
+                    android:scheme="https" />
+
+                <!-- WITH INDEX -->
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_OFFER_INDEX"
+                    android:scheme="nsapp" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_OFFER_INDEX"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_OFFER_INDEX"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.InboxActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.wuadam.awesomewebview.AwesomeWebViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@style/FinestWebViewTheme.Light" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.StoreDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/_DP_STORE_MESSAGE" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "http://www.example.com/gizmos” -->
+
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_STORE"
+                    android:scheme="nsapp" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_STORE"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_STORE"
+                    android:scheme="https" />
+
+                <!-- WITH INDEX -->
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_STORE_INDEX"
+                    android:scheme="nsapp" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_STORE_INDEX"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_STORE_INDEX"
+                    android:scheme="https" />
+
+                <!-- note that the leading "/" is required for pathPrefix -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.EventDetailActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/_DP_EVENT_MESSAGE" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_EVENT"
+                    android:scheme="nsapp" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_EVENT"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_EVENT"
+                    android:scheme="https" />
+                <!-- note that the leading "/" is required for pathPrefix -->
+
+
+                <!-- WITH INDEX -->
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_EVENT_INDEX"
+                    android:scheme="nsapp" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_EVENT_INDEX"
+                    android:scheme="http" />
+                <data
+                    android:host="@string/_DP_HOST_NAME"
+                    android:pathPrefix="@string/DP_PATH_PREFIX_EVENT_INDEX"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.MapDirectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.MapStoresListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.MyStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.CategoriesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.ListStoresActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.FavoriteEventsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.FavoriteStoreActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.SplashActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.SliderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.MapMarkerPosition"
+            android:label="@string/title_activity_map_marker_position" />
+        <activity
+            android:name="com.domain.apps.snapadeal.activities.NotificationActivity"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!--
+            Service handling Google Sign-In user revocation. For apps that do not integrate with
+            Google Sign-In, this service will never be started.
+        -->
+        <service
+            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+
+        <provider
+            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+            android:authorities="co.snapadeal.app.crashlyticsinitprovider"
+            android:exported="false"
+            android:initOrder="90" />
+
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="co.snapadeal.app.firebaseinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <provider
+            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+            android:authorities="co.snapadeal.app.mobileadsinitprovider"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.INSTALL_PACKAGES" >
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name="com.yanzhenjie.permission.PermissionActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="standard"
+            android:theme="@style/permission_PermissionActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+    </application>
+
+</manifest>
