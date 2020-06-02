@@ -77,7 +77,8 @@ import io.realm.Realm;
 /**
  * Created by Droideve on 6/26/2016.
  */
-public class MessengerActivity extends AppCompatActivity implements ListMessageAdapter.ClickListener,
+public class
+MessengerActivity extends AppCompatActivity implements ListMessageAdapter.ClickListener,
         ListMessageAdapter.LoadEarlierMessages,
         ViewManager.CustomView, DCMBroadcastReceiver.NetworkStateReceiverListener {
 

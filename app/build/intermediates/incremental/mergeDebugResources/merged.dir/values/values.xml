@@ -13,14 +13,14 @@
         <item>@color/dot_dark_screen4</item>
     </array>
     <integer-array name="tab_icons">
-        <item>@drawable/ic_storefront_outline_white_24dp</item>
         <item>@drawable/ic_percent_outline_white_24dp</item>
+        <item>@drawable/ic_storefront_outline_white_24dp</item>
         <item>@drawable/ic_calendar_outline_white_24dp</item>
         <item>@drawable/ic_inbox_outline_white_24dp</item>
     </integer-array>
     <integer-array name="tab_indexes">
-        <item>0</item>
         <item>-6</item>
+        <item>0</item>
         <item>-4</item>
         <item>-5</item>
     </integer-array>
@@ -1461,7 +1461,7 @@
     <string name="DP_STORE_MESSAGE">@string/dp_view_store_on</string>
     <string name="ENABLE_CHAT">true</string>
     <string name="ENABLE_INTRO_SLIDER">false</string>
-    <string name="ENABLE_LOCAL_MAPS_DIRECTION">true</string>
+    <string name="ENABLE_LOCAL_MAPS_DIRECTION">false</string>
     <string name="ENABLE_WEB_DASHBOARD">true</string>
     <string name="EventLike">My Events</string>
     <string name="Favoris">Favorites</string>
@@ -1549,7 +1549,7 @@
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string name="close">Close</string>
-    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">4eac2ebd-fd69-45be-805c-64d56b5ec32f</string>
+    <string name="com.crashlytics.android.build_id" ns2:ignore="UnusedResources,TypographyDashes" translatable="false">016bc29d-ce8b-4717-828e-67a488ca4b93</string>
     <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Enable</string>
     <string msgid="227660514972886228" name="common_google_play_services_enable_text"><ns1:g id="app_name">%1$s</ns1:g> won\'t work unless you enable Google Play services.</string>
     <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Enable Google Play services</string>

@@ -70,16 +70,16 @@ public class MainFragment extends Fragment {
                 switch (position) {
 
                     case 1:
-                        mPageViewEvent.title = getString(R.string.tab_events);
+                        mPageViewEvent.title = getString(R.string.tab_stores);
                         break;
                     case 2:
-                        mPageViewEvent.title = getString(R.string.tab_offers);
+                        mPageViewEvent.title = getString(R.string.tab_events);
                         break;
                     case 3:
                         mPageViewEvent.title = getString(R.string.tab_inbox);
                         break;
                     default:
-                        mPageViewEvent.title = getString(R.string.tab_stores);
+                        mPageViewEvent.title = getString(R.string.tab_offers);
                         break;
 
                 }

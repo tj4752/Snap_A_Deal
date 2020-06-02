@@ -31,7 +31,7 @@
     <string name="map_api_key">AIzaSyADrWqn5i08qk44_uWAbLcFDAXJ8TmSLbE</string>
 
     <!--Set this field will allow you to open the google direction maps on your app without redirecting to google maps app-->
-    <string name="ENABLE_LOCAL_MAPS_DIRECTION">true</string>
+    <string name="ENABLE_LOCAL_MAPS_DIRECTION">false</string>
     <!--Set your google map  direction key-->
     <!--Note : this field is optional if you set the ENABLE_LOCAL_MAPS_DIRECTION to false -->
     <string name="map_direction_api_key">AIzaSyADrWqn5i08qk44_uWAbLcFDAXJ8TmSLbE</string>
@@ -92,16 +92,16 @@
 
     <!-- downloaded icons from http://materialdesignicons.com/ and put them inside drawable folder -->
     <integer-array name="tab_icons">
-        <item>@drawable/ic_storefront_outline_white_24dp</item>
         <item>@drawable/ic_percent_outline_white_24dp</item>
+        <item>@drawable/ic_storefront_outline_white_24dp</item>
         <item>@drawable/ic_calendar_outline_white_24dp</item>
         <item>@drawable/ic_inbox_outline_white_24dp</item>
     </integer-array>
 
     <!-- Tabs ID -->
     <integer-array name="tab_indexes">
-        <item>0</item><!-- Stores Tab-->
-        <item>-6</item><!-- Offers Tab-->
+        <item>-6</item><!-- Stores Tab-->
+        <item>0</item><!-- Offers Tab-->
         <item>-4</item><!-- Events Tab-->
         <item>-5</item><!-- Inbox Tab-->
     </integer-array>

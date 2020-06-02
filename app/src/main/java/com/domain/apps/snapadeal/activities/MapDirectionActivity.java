@@ -21,7 +21,10 @@ import com.domain.apps.snapadeal.GPS.DirectionPointerLinster;
 import com.domain.apps.snapadeal.GPS.GPStracker;
 import com.domain.apps.snapadeal.GPS.GetPathFromLocation;
 import com.domain.apps.snapadeal.GPS.GoogleDirection;
+import com.domain.apps.snapadeal.GPS.Position;
 import com.domain.apps.snapadeal.R;
+import com.domain.apps.snapadeal.classes.Event;
+import com.domain.apps.snapadeal.dtmessenger.NotificationsManager;
 import com.domain.apps.snapadeal.network.ServiceHandler;
 import com.domain.apps.snapadeal.utils.MapsUtils;
 import com.google.android.gms.common.ConnectionResult;
@@ -59,6 +62,7 @@ public class MapDirectionActivity extends AppCompatActivity implements OnMapRead
     Timer timer;
     LatLng destinationPosition;
     LatLng myPosition;
+    LatLng eventPosition;
 
 
     // private GoogleMap map;

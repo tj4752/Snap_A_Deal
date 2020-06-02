@@ -41,7 +41,8 @@ import java.util.Map;
 /**
  * Created by Droideve on 6/26/2016.
  */
-public class NotificationUtils {
+public class
+NotificationUtils {
 
     public static int NOTIFY_ID = 0;
     private Context mContext;
